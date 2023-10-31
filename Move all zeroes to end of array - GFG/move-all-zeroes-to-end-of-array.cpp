@@ -8,12 +8,11 @@ class Solution{
 public:
 	void pushZerosToEnd(int arr[], int n) {
 	    int count_0=0;
-	    int count=0;
+	   
 	    for(int i=0; i<n; i++){
 	        if(arr[i]==0) count_0++;
 	    }
-	    // code here
-	    count=n-count_0;
+	    
 	    int j=0;
 	    for(int i=0; i<n; i++){
 	        if(arr[i]!=0){
@@ -21,11 +20,6 @@ public:
 	            j++;
 	        }
 	    }
-	    //for(int i=0; i<n; i++) cout<<arr[i]<<" ";
-	    //cout<<endl;
-	   // for(int i=n-1; i>count_0; i--){
-	   //     arr[i]=0;
-	   // }
 	   for(int i=j; i<n; i++){
 	       arr[i]=0;
 	   }
