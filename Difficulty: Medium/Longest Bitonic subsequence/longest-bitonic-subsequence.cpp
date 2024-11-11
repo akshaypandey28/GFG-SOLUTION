@@ -48,6 +48,7 @@ class Solution {
 };
 
 
+
 //{ Driver Code Starts.
 
 int main() {
@@ -65,6 +66,7 @@ int main() {
         int res = obj.LongestBitonicSequence(n, nums);
 
         cout << res << endl;
+        cout << "~" << endl;
     }
 }
 
